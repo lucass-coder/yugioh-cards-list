@@ -1,25 +1,46 @@
-import logo from './logo.svg';
 import './App.css';
+import React, {  } from 'react';
+// import RandomCard from './RandomCard';
+// import axios from 'axios';
+import { BrowserRouter as Router } from 'react-router-dom'
+import Cabecalho from './Cabecalho';
+
+import api from './api';
+import Content from './Content';
 
 function App() {
+
+
+  // const [user, setUser] = useState(null);
+
+  // ( async () => {
+  //   const response = await api.get('/');
+
+  //   console.log(response.data);
+
+  // }).apply();
+
+  
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <Router>
+        <Cabecalho />
+        <Content />
+      </Router>
     </div>
+
   );
 }
 
-export default App;
+// const App = props => (
+
+//   <div className='App'>
+//     <Router>
+//       <Cabecalho />
+//       <RandomCard />
+//     </Router>
+//   </div>
+// )
+
+export default App

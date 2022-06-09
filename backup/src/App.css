@@ -25,3 +25,13 @@ h1 {
   margin-left: 10px;
 }
 
+.body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.body img {
+  width: 20%;
+}

@@ -1,0 +1,11 @@
+.Home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+
+.Home img{
+    width: 50%;
+}
