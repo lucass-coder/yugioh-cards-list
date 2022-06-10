@@ -14,7 +14,7 @@ import ListarCards from './ListarCards';
 const Content = props => (
     <main className='Content'>
         <Routes>
-            <Route path="/" caseSensitive={false} element={<LoginPage />} />
+            <Route path="/" caseSensitive={false} element={<LoginPage />} /> 
             <Route path="/home/:id" caseSensitive={false} element={<Home />} />
             <Route path="/cadastrar" caseSensitive={false} element={<CadastroPage />} />
             <Route path="/cadastrarCarta" caseSensitive={false} element={<CadastrarCarta />} />
