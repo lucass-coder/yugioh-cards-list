@@ -40,7 +40,7 @@ class ListarDecks extends Component {
 
         return (
             <div className='body'>
-                <h2> Lista de Decks </h2>
+                <h2> TIpos de Decks </h2>
                 <div>
                     {this.state.nomes.map((valor) => {
                         var link = `/listarDecks/deckListado/${valor}`;

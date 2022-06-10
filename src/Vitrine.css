@@ -1,0 +1,15 @@
+.cartas :hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+ 
+ .img-container:hover img{
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+ }
+
+ img :hover {
+     width: 10px;
+     -webkit-transform: scale(1.5);
+     transform: scale(1.5);
+ }

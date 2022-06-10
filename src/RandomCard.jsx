@@ -22,6 +22,7 @@ class RandomCard extends Component {
     console.log(response.data.nome);
     console.log(response.data.id);
     console.log(response.data.img);
+    console.log(response.data.sessao);
 
     //this.setState({imagens: response.data.data[3].card_images[0].image_url})
     this.setState({imagens: response.data.img})
@@ -50,54 +51,3 @@ class RandomCard extends Component {
 }
 
 export default RandomCard;
-
-
-
-
-
-
-// import React, { useState, Component } from "react";
-// import './RandomCards.css';
-// import api from './api';
-// import apiRandom from "./apiRandom";
-// import { setSelectionRange } from "@testing-library/user-event/dist/utils";
-
-
-// function RandomCard() {
-
-//     const [dataCard, setDataCard] = useState('tomate');
-//     var nomeCard = 'Nome Tomate';
-
-//     (async () => {
-//         const response = await api.get('/randomCard');
-    
-//         console.log(response.data.nome);
-//         console.log(response.data.id);
-//         console.log(response.data.img);
-    
-//         nomeCard = response.data.nome;
-//         //setDataCard(response.data.nome);
-    
-//         //setDataCard(response.data.nome)
-    
-//         // this.setState({imagens: response.data.data[3].card_images[0].image_url})
-//         // this.setState({ imagens: response.data.img })
-//         // this.setState({ nome: response.data.nome })
-//         // this.setState({ id: response.data.id })
-    
-//     }).apply();
-
-
-//     return (
-//         <div className='body'>
-//             <h2> Tomate - {nomeCard}</h2>
-//             <img src="" ></img>
-//             <p>Descrição da carta Jinzo</p>
-//             <button  >Sortear</button>
-//         </div>
-//     )
-// }
-
-
-
-// export default RandomCard; 

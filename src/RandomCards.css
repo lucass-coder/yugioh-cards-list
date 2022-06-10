@@ -8,3 +8,22 @@
   .body img {
     width: 20%;
   }
+
+  .bodyList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .cartas {
+    width: 30%;
+    
+  }
+  
+  .divMapCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }

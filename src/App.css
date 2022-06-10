@@ -12,6 +12,15 @@
   color: white
 }
 
+.header a:hover {
+  background-color: burlywood;
+}
+
+.logo {
+
+  width: 25vh;
+}
+
 .menu {
   display: flex;
   list-style: none;

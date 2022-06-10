@@ -1,38 +1,43 @@
 
 import api from './api';
 import './RandomCards.css';
-import React, { Component, useEffect, useState } from 'react';
-import { Routes, Route, useParams, } from "react-router-dom"; 
+import React, { useEffect, useState } from 'react';
+
+import './Vitrine.css';
 
 
-  function DeckListado() {
+  function Vitrine() {
 
-  const {id} = useParams();
+  //const {id} = useParams();
   const [cardImage, setCardImage] = useState([]);
   var dataImage;
 
 
   useEffect(() => {
     api
-      .get(`/archetypes/${id}`)
-      .then((response) => setCardImage(response.data.image))
+      .get(`/vitrine`)
+      .then((response) => setCardImage(response.data))
       .catch((err) => {
         console.error("ops! ocorreu um erro" + err);
       });
 
   }, []);
 
+  function chamaConsole(i) {
+      console.log(i)
+  }
+
   return (
       
     <div className='body'>
-        <h2> Cartas do Arquétipo {id} </h2>
+        <h2> Cartas mais famosas </h2>
         {console.log(cardImage.length)}
         {/* <p>{cardImage[0]}</p> */}
         {
               <p>
                   {cardImage.map(item =>
                       //<li key="{item}">{item}</li>
-                      <img key={item} src={item} ></img>
+                      <img key={item} src={item} className="img-container" ></img>
                   )}
               </p>
         }
@@ -41,4 +46,4 @@ import { Routes, Route, useParams, } from "react-router-dom";
   );
 }
 
-export default DeckListado;
+export default Vitrine;
